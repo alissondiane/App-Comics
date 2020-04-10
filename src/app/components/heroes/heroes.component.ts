@@ -22,6 +22,8 @@ export class HeroesComponent implements OnInit {
     console.log(this.heroes);
   }
   verHeroe(idx:number){
+    console.log("invoco al metodo de la clase padre en heroes");
+    console.log("llego el index " + idx);
     this.router.navigate(['/heroe',idx])
   }
 
